@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuminaX — Hybrid Solar-Wind Streetlight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particles"></canvas>
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">LUMINA<span>X</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#specs">Specs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Get a Quote</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="energy-ring ring1"></div>
+    <div class="energy-ring ring2"></div>
+    <div class="energy-ring ring3"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">THE FUTURE OF PUBLIC INFRASTRUCTURE</div>
+      <h1 class="hero-title reveal">
+        POWER THE<br/>
+        <span class="gradient-text">STREETS</span><br/>
+        OF TOMORROW
+      </h1>
+      <p class="hero-sub reveal">
+        Hybrid Solar–Wind Powered Streetlight with<br/>
+        Public Charging Station &amp; Smart Bench
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#features" class="btn-primary">Explore Features</a>
+        <a href="#specs" class="btn-ghost">View Specs</a>
+      </div>
+    </div>
+
+    <div class="hero-product reveal">
+      <div class="product-glow"></div>
+      <div class="product-halo"></div>
+      <img src="icon.png" alt="LuminaX Hybrid Streetlight" class="product-img"/>
+      <div class="scan-line"></div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-num" data-target="100">0</span><span>%</span>
+      <p>Renewable Energy</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="360">0</span><span>°</span>
+      <p>Solar Tracking</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="24">0</span><span>/7</span>
+      <p>Power Output</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="50">0</span><span>+</span>
+      <p>Years Lifespan</p>
+    </div>
+  </div>
+
+  <!-- FEATURES SECTION -->
+  <section class="features" id="features">
+    <div class="section-label reveal">CORE FEATURES</div>
+    <h2 class="section-title reveal">ENGINEERED FOR <span class="gradient-text">IMPACT</span></h2>
+
+    <div class="features-grid">
+
+      <div class="feature-card reveal" style="--delay:0s">
+        <div class="feature-icon solar-icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="12" fill="#00e5ff" opacity="0.9"/>
+            <line x1="30" y1="4" x2="30" y2="14" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="30" y1="46" x2="30" y2="56" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="4" y1="30" x2="14" y2="30" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="46" y1="30" x2="56" y2="30" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="11.5" y1="11.5" x2="18.5" y2="18.5" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="41.5" y1="41.5" x2="48.5" y2="48.5" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="48.5" y1="11.5" x2="41.5" y2="18.5" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+            <line x1="18.5" y1="41.5" x2="11.5" y2="48.5" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Auto Solar Tracking</h3>
+        <p>LDR-based sunlight sensor rotates the panel to face the sun for maximum energy harvest — all day, every day.</p>
+        <div class="card-line"></div>
+      </div>
+
+      <div class="feature-card reveal" style="--delay:0.1s">
+        <div class="feature-icon wind-icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="4" fill="#39ff14"/>
+            <path d="M30 26 L26 10 Q30 4 34 10 Z" fill="#39ff14" opacity="0.8"/>
+            <path d="M34 30 L50 26 Q56 30 50 34 Z" fill="#39ff14" opacity="0.8"/>
+            <path d="M30 34 L34 50 Q30 56 26 50 Z" fill="#39ff14" opacity="0.8"/>
+            <path d="M26 30 L10 34 Q4 30 10 26 Z" fill="#39ff14" opacity="0.8"/>
+          </svg>
+        </div>
+        <h3>Wind Turbine Power</h3>
+        <p>Compact vertical-axis wind turbine generates electricity day and night, complementing solar energy perfectly.</p>
+        <div class="card-line"></div>
+      </div>
+
+      <div class="feature-card reveal" style="--delay:0.2s">
+        <div class="feature-icon led-icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="30" cy="22" rx="14" ry="14" fill="#ffe500" opacity="0.9"/>
+            <rect x="22" y="36" width="16" height="6" rx="2" fill="#ffe500" opacity="0.7"/>
+            <rect x="25" y="42" width="10" height="4" rx="1" fill="#ffe500" opacity="0.5"/>
+            <line x1="30" y1="8" x2="30" y2="4" stroke="#ffe500" stroke-width="2"/>
+            <line x1="44" y1="14" x2="48" y2="10" stroke="#ffe500" stroke-width="2"/>
+            <line x1="16" y1="14" x2="12" y2="10" stroke="#ffe500" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>High-Efficiency LED</h3>
+        <p>Ultra-bright LED streetlight with intelligent dimming, delivering powerful illumination at minimal energy cost.</p>
+        <div class="card-line"></div>
+      </div>
+
+      <div class="feature-card reveal" style="--delay:0.3s">
+        <div class="feature-icon charge-icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" y="10" width="24" height="36" rx="4" stroke="#00e5ff" stroke-width="2.5"/>
+            <rect x="24" y="6" width="12" height="6" rx="2" fill="#00e5ff" opacity="0.7"/>
+            <path d="M33 26 L27 34 H32 L27 44 L37 30 H31 Z" fill="#00e5ff"/>
+          </svg>
+        </div>
+        <h3>Public Charging Station</h3>
+        <p>Integrated USB ports and AC outlets let citizens charge phones, laptops, and devices — free, clean energy.</p>
+        <div class="card-line"></div>
+      </div>
+
+      <div class="feature-card reveal" style="--delay:0.4s">
+        <div class="feature-icon bench-icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="28" width="44" height="6" rx="3" fill="#39ff14" opacity="0.8"/>
+            <rect x="12" y="34" width="6" height="14" rx="2" fill="#39ff14" opacity="0.6"/>
+            <rect x="42" y="34" width="6" height="14" rx="2" fill="#39ff14" opacity="0.6"/>
+            <rect x="10" y="22" width="40" height="6" rx="3" fill="#39ff14" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Comfortable Public Bench</h3>
+        <p>Ergonomic weatherproof bench integrated into the base — a true community gathering point powered by nature.</p>
+        <div class="card-line"></div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how">
+    <div class="section-label reveal">HOW IT WORKS</div>
+    <h2 class="section-title reveal">ONE UNIT. <span class="gradient-text">INFINITE POWER.</span></h2>
+    <div class="steps">
+      <div class="step reveal" style="--delay:0s">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h4>Harvest</h4>
+          <p>Solar panel auto-tracks the sun. Wind turbine spins 24/7. Energy is stored in on-board batteries.</p>
+        </div>
+      </div>
+      <div class="step-arrow reveal">▶</div>
+      <div class="step reveal" style="--delay:0.15s">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h4>Store</h4>
+          <p>High-capacity lithium battery bank stores surplus energy for nighttime and low-wind periods.</p>
+        </div>
+      </div>
+      <div class="step-arrow reveal">▶</div>
+      <div class="step reveal" style="--delay:0.3s">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h4>Distribute</h4>
+          <p>Power flows to the LED light, USB ports, AC outlets, and smart sensor array automatically.</p>
+        </div>
+      </div>
+      <div class="step-arrow reveal">▶</div>
+      <div class="step reveal" style="--delay:0.45s">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h4>Impact</h4>
+          <p>Communities thrive. Streets are safer. Citizens charge devices. Zero carbon. Zero utility bills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS SECTION -->
+  <section class="specs" id="specs">
+    <div class="section-label reveal">TECHNICAL SPECS</div>
+    <h2 class="section-title reveal">BUILT TO <span class="gradient-text">LAST</span></h2>
+    <div class="specs-grid">
+      <div class="spec-row reveal"><span class="spec-label">Solar Panel Output</span><span class="spec-val">200W Monocrystalline</span></div>
+      <div class="spec-row reveal"><span class="spec-label">Wind Turbine Output</span><span class="spec-val">100W Vertical Axis</span></div>
+      <div class="spec-row reveal"><span class="spec-label">Battery Storage</span><span class="spec-val">48V / 100Ah LiFePO4</span></div>
+      <div class="spec-row reveal"><span class="spec-label">LED Streetlight</span><span class="spec-val">80W High-Efficiency</span></div>
+      <div class="spec-row reveal"><span class="spec-label">Charging Ports</span><span class="spec-val">2× USB-A, 1× USB-C, 1× AC</span></div>
+      <div class="spec-row reveal"><span class="spec-label">Sensor System</span><span class="spec-val">LDR + PIR Motion Sensor</span></div>
+      <div class="spec-row reveal"><span class="spec-label">Structure Material</span><span class="spec-val">Galvanized Steel + Aluminum</span></div>
+      <div class="spec-row reveal"><span class="spec-label">Lifespan</span><span class="spec-val">50+ Years</span></div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section" id="contact">
+    <div class="cta-glow"></div>
+    <div class="section-label reveal">GET STARTED</div>
+    <h2 class="cta-title reveal">READY TO <span class="gradient-text">ILLUMINATE</span><br/>YOUR COMMUNITY?</h2>
+    <p class="cta-sub reveal">Contact us today for custom installations, bulk pricing, and project consultations.</p>
+    <div class="cta-btns reveal">
+      <a href="mailto:info@luminax.energy" class="btn-primary big">Request a Quote</a>
+      <a href="tel:+1800000000" class="btn-ghost big">Call Us</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">LUMINA<span>X</span></div>
+    <p>© 2025 LuminaX Energy Systems. All rights reserved.</p>
+    <p class="footer-tagline">Powering tomorrow, today.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
